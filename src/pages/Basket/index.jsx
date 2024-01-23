@@ -51,8 +51,8 @@ function Basket() {
                     {
                         <button onClick={() => navigate(-1)} className={styled.header__return}>
                             <img
-                                src="/images/icon_btnReturn.svg"
-                                alt="иконка выхода из корзины"
+                                src="./diploma-react/images/icon_btnReturn.svg"
+                                alt="вернуться на предыдущую страницу"
                             >
                             </img>
                         </button>

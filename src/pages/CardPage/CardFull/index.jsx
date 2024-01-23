@@ -25,7 +25,7 @@ function CardFull() {
             cardObj = Object.assign(item);
         }
     })
-
+    
     // функция записи в store
     const handleBtnAdd = () => {
         if (basket.filter(item => item.id === +id).length) {
@@ -37,6 +37,7 @@ function CardFull() {
 
         } else {
             let newArr = JSON.parse(JSON.stringify(basket));
+     
             newArr.push({
                 id: cardObj.id,
                 src: cardObj.src,
@@ -67,7 +68,7 @@ function CardFull() {
     return (
         <div className={styled.card}>
 
-            <img src={cardObj.src} alt={cardObj.title} className={styled.card__img}></img>
+            <img src={"../diploma-react" + cardObj.src.slice(1)} alt={cardObj.title} className={styled.card__img}></img>
 
             <div className={styled.card__info}>
 

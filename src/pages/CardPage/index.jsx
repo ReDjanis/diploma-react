@@ -49,7 +49,7 @@ function CardPage() {
                     childrenOne=
                     {
                         <button onClick={() => navigate(-1)} className={styled.header__return}>
-                            <img src="/images/icon_btnReturn.svg" alt="иконка выхода из корзины"></img>
+                            <img src="../diploma-react/images/icon_btnReturn.svg" alt="вернуться на предыдущую страницу"></img>
                         </button>
                     }
                     childrenTwo=
@@ -59,7 +59,7 @@ function CardPage() {
                                 {countStore + ' ' + sklonenie(countStore, ['товар', 'товара', 'товаров'])} <br />
                                 на сумму {sumStore} ₽
                             </span>
-                            <img src="/images/icon_basket.png" alt="иконка корзины"></img>
+                            <img src="../diploma-react/images/icon_basket.png" alt="корзина"></img>
                         </Link>
                     }
                 />

@@ -53,7 +53,7 @@ function Product() {
                             {countStore + ' ' + sklonenie(countStore, ['товар', 'товара', 'товаров'])} <br />
                             на сумму {sumStore} ₽
                         </span>
-                        <img src="/images/icon_basket.png" alt="иконка корзины"></img>
+                        <img src="../diploma-react/images/icon_basket.png" alt="корзина"></img>
                     </Link>
                 }
             />
