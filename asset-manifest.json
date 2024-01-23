@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/diploma-react/static/css/main.9ea3ff95.css",
-    "main.js": "/diploma-react/static/js/main.50c55672.js",
+    "main.js": "/diploma-react/static/js/main.0f62a396.js",
     "static/js/787.28cb0dcd.chunk.js": "/diploma-react/static/js/787.28cb0dcd.chunk.js",
     "static/media/backLogin.svg": "/diploma-react/static/media/backLogin.e9f6f6351841bc2a2244.svg",
     "static/media/backgroundCardFull.svg": "/diploma-react/static/media/backgroundCardFull.f58bae61df5176c3a5b8.svg",
     "index.html": "/diploma-react/index.html",
     "main.9ea3ff95.css.map": "/diploma-react/static/css/main.9ea3ff95.css.map",
-    "main.50c55672.js.map": "/diploma-react/static/js/main.50c55672.js.map",
+    "main.0f62a396.js.map": "/diploma-react/static/js/main.0f62a396.js.map",
     "787.28cb0dcd.chunk.js.map": "/diploma-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ea3ff95.css",
-    "static/js/main.50c55672.js"
+    "static/js/main.0f62a396.js"
   ]
 }
