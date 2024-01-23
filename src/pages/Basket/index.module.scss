@@ -1,0 +1,58 @@
+.basket-header {
+    max-width: 1308px;
+    margin: 0 auto;
+}
+
+.basket {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.header {
+
+    &__return {
+        min-width: 32px;
+        height: 32px;
+        background-color: #161516;
+        margin-right: 63px;
+        cursor: pointer;
+
+        img {
+            overflow: hidden;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+        img:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+}
+
+// Корректно отображает до 280px
+@media screen and (max-width: 1350px) {
+    .basket-header {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .basket {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .basket-header {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 308px) {
+    .header {
+        &__return {
+            margin-right: 30px;
+        }
+    }
+}

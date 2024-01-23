@@ -1,0 +1,36 @@
+.main-basket {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    height: calc(100vh - 131px - 89px);
+    margin-top: -44px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+}
+
+.link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.link:hover {
+    color: #D58C51;
+}
+
+// Корректно отображает до 280px
+@media screen and (max-width: 720px) {
+    .main-basket {
+        height: calc(100vh - 181px - 89px);
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .main-basket {
+        padding-top: 50px;
+    }
+}

@@ -1,0 +1,134 @@
+.form {
+    width: 460px;
+    height: 340px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding: 7px 20px 34px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__header {
+        text-align: right;
+
+        &_btn {
+            width: 99px;
+            background-color: #FFFFFF;
+            text-decoration-line: underline;
+            color: #D58C51;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+        }
+
+        &_btn:hover {
+            background-color: #eeb689;
+            color: black;
+            z-index: -1;
+            width: 105px;
+            transition: 0.2s;
+            padding: 2px 3px;
+            border-radius: 5px;
+            margin-right: -3px;
+            margin-bottom: -2px;
+            text-decoration: none;
+        }
+    }
+
+    &__title {
+        height: 59px;
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 38px;
+        text-transform: uppercase;
+        color: #161516;
+        margin: 0 auto;
+    }
+
+    &__main {
+        height: 139px;
+    }
+
+    &__input {
+        width: 100%;
+        height: 39px;
+        border: 1px solid #D58C51;
+        border-radius: 61px;
+        padding: 9px 18px 10px 18px;
+
+        input {
+            width: 100%;
+            outline: none;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #161516;
+        }
+
+        input::placeholder {
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #161516;
+        }
+    }
+
+    &__err {
+        height: 15px;
+        padding-left: 18px;
+        padding-top: 1px;
+        font-weight: 300;
+        font-size: 8px;
+        line-height: 10px;
+        color: #FF0B0B;
+    }
+
+    &__consent input {
+        display: none;
+    }
+
+    &__consent label {
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        div:last-child {
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: #301411;
+        }
+    }
+
+    &__shell {
+        border: 1px solid #D58C51;
+        border-radius: 20px;
+        cursor: pointer;
+        height: 18px;
+        width: 18px;
+        margin-right: 9px;
+    }
+
+    &__consent label:before {
+        content: '';
+        -webkit-appearance: none;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__consent input:checked+label:after {
+        content: url("../../../../public/images/Vector.png");
+        position: absolute;
+        top: 2px;
+        left: 2px;
+    }
+
+    &__btn {
+        margin: 0 auto;
+    }
+
+}

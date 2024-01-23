@@ -1,0 +1,131 @@
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -50px;
+    flex-wrap: wrap;
+
+    &__img {
+        width: 501px;
+        height: 503px;
+        margin-left: 72px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 37px;
+        color: #D58C51;
+        max-width: 414px;
+        padding-top: 58px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        max-width: 528px;
+        min-height: 213px;
+        padding-top: 21px;
+    }
+
+    &__footer {
+        display: flex;
+        column-gap: 68px;
+        padding-top: 34px;
+
+        span:first-child {
+            font-size: 23px;
+            line-height: 28px;
+        }
+
+        span:last-child {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &_info {
+            width: 150px;
+        }
+    }
+
+    &__addButton {
+        width: 100%;
+        padding-top: 30px;
+        padding-left: 218px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .card {
+        justify-content: center;
+
+        &__img {
+            margin-right: 20px;
+            margin-left: 20px;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1108px) {
+    .card {
+        &__title {
+            padding-top: 20px;
+        }
+
+        &__description {
+            max-width: calc(100vw - 20px);
+        }
+
+        &__footer {
+            padding-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .card {
+
+        &__title {
+            font-size: calc((100vw - 280px)/(630 - 280)*(30 - 15) + 15px);
+        }
+
+        &__description {
+            font-size: calc((100vw - 280px)/(630 - 280)*(14 - 11) + 11px);
+        }
+
+        &__footer {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .card {
+
+        &__img {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &__title {
+            width: calc(100vw - 40px);
+        }
+
+        &__description {
+            width: calc(100vw - 40px);
+        }
+
+        &__addButton {
+            padding-left: 0;
+        }
+    }
+
+}

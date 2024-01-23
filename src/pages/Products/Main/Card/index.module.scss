@@ -1,0 +1,103 @@
+.card {
+    max-width: 312px;
+    height: 552px;
+    border: 1px solid #D58C51;
+    padding: 43px 21px 32px 21px;
+    margin-bottom: 35px;
+
+
+    &__info {
+        height: 145px;
+    }
+
+    &__title {
+        font-size: 17px;
+        line-height: 21px;
+        max-height: 38px;
+        margin-top: 31px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 13px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span:first-child {
+            font-size: 17px;
+            line-height: 21px;
+        }
+
+        span:last-child {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    &__btn {
+        background-color: #161516;
+        width: 30px;
+        height: 30px;
+        background-image: url(../../../../../public/images/icon_add.png);
+        overflow: hidden;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    &:hover {
+        color: #D58C51;
+    }
+
+    &:hover button {
+        background-image: url(../../../../../public/images/icon_add_hover.png);
+    }
+
+    &__btn:hover {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    &__btn_del {
+        background-color: #161516;
+        width: 30px;
+        height: 30px;
+        background-image: url(../../../../../public/images/icon_add.png);
+        overflow: hidden;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        transform: rotate(45deg);
+    }
+
+    &__btn_del:hover {
+        -webkit-transform: rotate(405deg);
+        transform: rotate(405deg);
+    }
+}
+
+// Корректно отображает до 280px
+@media screen and (max-width: 380px) {
+    .card {
+        min-width: 220px;
+        height: auto;
+
+        img {
+            max-width: calc(100vw - 100px);
+            height: auto;
+        }
+
+        &__title {
+            font-size: calc((100vw - 280px)/(380 - 280)*(17 - 14) + 14px);
+        }
+
+        &__description {
+            font-size: calc((100vw - 280px)/(380 - 280)*(14 - 11) + 11px);
+        }
+    }
+}

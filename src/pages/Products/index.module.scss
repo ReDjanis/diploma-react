@@ -1,0 +1,61 @@
+.products {
+    max-width: 1308px;
+    margin: 0 auto;
+}
+
+.header {
+
+    &__basket {
+        color: #FFFFFF;
+        width: 221px;
+        height: 50px;
+        font-size: 17px;
+        line-height: 21px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #161516;
+        text-decoration: none;
+        margin-right: 22px;
+        cursor: pointer;
+
+        span {
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        span:hover {
+            color: #D58C51;
+        }
+
+        img {
+            min-width: 50px;
+            height: 50px;
+            overflow: hidden;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+        img:hover {
+            border-radius: 50%;
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+}
+
+// Корректно отображает до 280px
+@media screen and (max-width: 1350px) {
+    .products {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .header {
+        &__basket {
+            justify-content: flex-end;
+        }
+    }
+}

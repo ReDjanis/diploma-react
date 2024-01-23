@@ -1,0 +1,98 @@
+.header {
+    height: 98px;
+    padding-top: 48px;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__firstElement {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 38px;
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+
+    &__lastElement {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+// Корректно отображает до 280px
+@media screen and (max-width: 720px) {
+    .header {
+        margin-right: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__title {
+            margin-bottom: 10px;
+        }
+
+        &__lastElement {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 631.7px) {
+    .header {
+        padding-top: 15px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 516px) {
+    .header {
+        height: 180px;
+
+        &__lastElement {
+            row-gap: 10px;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        &__title {
+            font-size: calc((100vw - 370px)/(450 - 380)*(31 - 25) + 25px);
+        }
+
+        span {
+            font-size: calc((100vw - 370px)/(450 - 380)*(17 - 14) + 14px);
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header {
+        min-height: 98px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+        &__title {
+            margin-right: 0;
+
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .header {
+        span {
+            font-size: 14px;
+        }
+    }
+}
