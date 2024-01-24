@@ -68,7 +68,7 @@ function FormRegistration(props) {
             <div className={styled.form__btn}>
                 <ButtonStyled
                     name='Зарегистрироваться'
-                    bgColor='#d58c51'
+                    bgcolor='#d58c51'
                     color='#131313'
                     onClick={props.handleClickReg}
                 />

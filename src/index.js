@@ -11,8 +11,9 @@ import { store } from './store';
 import { Provider } from 'react-redux';
 import CardPage from './pages/CardPage';
 import LoginPage from './pages/LoginPage';
+import { createHashRouter } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/*",
     element: <Product />,
@@ -53,7 +54,7 @@ const router = createBrowserRouter([
       const user = JSON.parse(localStorage.getItem('registered'));
       if (user) {
         throw redirect("/*");
-      } 
+      }
       return user;
     }
   },
@@ -61,12 +62,14 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    {/* <App /> */}
-    <Provider store={store}>
-      <RouterProvider router={router} />
-    </Provider>
-  </React.StrictMode>
+  
+    <React.StrictMode>
+      {/* <App /> */}
+      <Provider store={store}>
+        <RouterProvider router={router} />
+      </Provider>
+    </React.StrictMode>
+ 
 );
 
 // If you want to start measuring performance in your app, pass a function

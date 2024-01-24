@@ -68,7 +68,7 @@ function CardFull() {
     return (
         <div className={styled.card}>
 
-            <img src={"../diploma-react" + cardObj.src.slice(1)} alt={cardObj.title} className={styled.card__img}></img>
+            <img src={cardObj.src} alt={cardObj.title} className={styled.card__img}></img>
 
             <div className={styled.card__info}>
 
@@ -88,7 +88,7 @@ function CardFull() {
 
                     <ButtonStyled
                         name="В корзину"
-                        bgColor='#d58c51'
+                        bgcolor='#d58c51'
                         color='#131313'
                         onClick={handleBtnAdd}
                     />
@@ -97,7 +97,7 @@ function CardFull() {
                     {condition ? (
                         <ButtonStyled
                             name="Удалить из корзины"
-                            bgColor='#d58c51'
+                            bgcolor='#d58c51'
                             color='#131313'
                             onClick={handleBtnDel}
                         />

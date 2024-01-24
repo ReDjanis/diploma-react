@@ -6,14 +6,14 @@ const Button = styled.button`
   height: 42px;
   cursor: pointer;
   color: ${props => props.color || '#d58c51'};
-  background-color: ${props => props.bgColor || 'transparent'};
+  background-color: ${props => props.bgcolor || 'transparent'};
   border: 1px solid #d58c51;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   &:hover {
     background: ${props => {
-    if (props.bgColor) {
+    if (props.bgcolor) {
       return '#131313'
     } else {
       return '#d58c51'

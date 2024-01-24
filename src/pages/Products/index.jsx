@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "./index.module.scss"
 import Header from "../../components/Header"
 import Main from "./Main"
-import { Link, useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { editBasket, editCount, editSum } from '../../store/reducers/products';
@@ -53,7 +53,7 @@ function Product() {
                             {countStore + ' ' + sklonenie(countStore, ['товар', 'товара', 'товаров'])} <br />
                             на сумму {sumStore} ₽
                         </span>
-                        <img src="../diploma-react/images/icon_basket.png" alt="корзина"></img>
+                        <img src='./images/icon_basket.png' alt="корзина"></img>
                     </Link>
                 }
             />

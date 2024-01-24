@@ -12,7 +12,7 @@ function Footer({ sum, handleBtn }) {
 
                 <ButtonStyled
                     name="Оформить заказ"
-                    bgColor='#d58c51'
+                    bgcolor='#d58c51'
                     color='#131313'
                     onClick={handleBtn}
                 />
